@@ -2,6 +2,7 @@
 
 { Form Form
   MoveScaled(0,0,142,81)
+  Foreground = &HE3E3E3&
   Text = ("🖴 USB Utility")
   Icon = Picture["USBUtility.png"]
   { Label1 Label
@@ -16,9 +17,11 @@
   }
   { IconView1 IconView
     MoveScaled(30,-1,124,84)
+    Background = &HF0F0F0&
   }
   { Label2 Label
     MoveScaled(33,74,25,4)
+    Foreground = &H757577&
     Text = ("Disk Label (Optional):")
   }
   { txtDiskName TextBox
@@ -33,26 +36,18 @@
   { Label3 Label
     MoveScaled(47,8,57,8)
     Font = Font["Droid Sans Fallback,Bold,+5"]
+    Foreground = &H231E24&
     Text = ("USB Medium not found")
   }
   { Label4 Label
     MoveScaled(47,14,57,4)
     Font = Font["Droid Sans Fallback,+1"]
+    Foreground = &H757577&
     Text = ("0xc8")
   }
   { IconView2 IconView
     MoveScaled(-8,-7,150,14)
-  }
-  { btnBegin Button
-    MoveScaled(68,1,5,4)
-  }
-  { btn_refresh Button
-    MoveScaled(77,1,5,4)
-  }
-  { PictureBox2 PictureBox
-    MoveScaled(1,11,6,4)
-    Picture = Picture.Load("usb-2-512.png")
-    Mode = PictureBox.Contain
+    Background = &HEBEBEB&
   }
   { pg_space ProgressBar
     MoveScaled(36,26,99,4)
@@ -76,6 +71,8 @@
   }
   { Label7 Label
     MoveScaled(40,31,13,4)
+    Font = Font["Bold"]
+    Foreground = &H231E24&
     Text = ("Used")
   }
   { Button2 Button
@@ -85,7 +82,9 @@
   }
   { Label8 Label
     MoveScaled(65,31,29,4)
-    Text = ("Free space")
+    Font = Font["Bold"]
+    Foreground = &H231E24&
+    Text = ("Free")
   }
   { lbl_copyright TextLabel
     MoveScaled(0,76,29,5)
@@ -119,7 +118,7 @@
     Text = ("InfoDisk")
   }
   { lbl_erase TextLabel
-    MoveScaled(68,5,5,2)
+    MoveScaled(80,5,5,2)
     Font = Font["-2"]
     Foreground = &H808080&
     Text = ("Erase")
@@ -127,174 +126,234 @@
   }
   { TextLabel4 TextLabel
     MoveScaled(39,35,11,3)
-    Font = Font["Bold"]
-    Foreground = &H67686C&
+    Foreground = &H757577&
   }
   { TextLabel5 TextLabel
     MoveScaled(66,35,11,3)
     Font = Font["Bold"]
-    Foreground = &H67686C&
+    Foreground = &H757577&
   }
   { lbl_mountpoint_title TextLabel
     MoveScaled(36,48,24,3)
+    Foreground = &H757577&
     Text = ("Mount Point:")
   }
   { lbl_capacity_title TextLabel
     MoveScaled(36,52.5714,24,3)
+    Foreground = &H757577&
     Text = ("Capacity:")
   }
   { lbl_available_title TextLabel
     MoveScaled(36,57.1429,24,4)
+    Foreground = &H757577&
     Text = ("Available:")
   }
   { lbl_used_title TextLabel
     MoveScaled(36,61.4286,24,4)
+    Foreground = &H757577&
     Text = ("Used:")
   }
   { lbl_type_title TextLabel
     MoveScaled(88,48,24,4)
+    Foreground = &H757577&
     Text = ("Type:")
   }
   { lbl_owners_title TextLabel
     MoveScaled(88,52.5714,24,4)
+    Foreground = &H757577&
     Text = ("Owners:")
   }
   { lbl_connections_title TextLabel
     MoveScaled(88,57.1429,24,3)
+    Foreground = &H757577&
     Text = ("Connection:")
   }
   { lbl_device_title TextLabel
     MoveScaled(88,61.4286,24,4)
+    Foreground = &H757577&
     Text = ("Device:")
   }
   { lbl_mountpoint TextLabel
     MoveScaled(61,48,24,4)
+    Foreground = &H757577&
     Alignment = Align.TopRight
   }
   { lbl_capacity TextLabel
     MoveScaled(61,52.5714,24,4)
+    Foreground = &H757577&
     Alignment = Align.TopRight
   }
   { lbl_available TextLabel
     MoveScaled(61,57.1429,24,4)
+    Foreground = &H757577&
     Alignment = Align.TopRight
   }
   { lbl_used TextLabel
     MoveScaled(61,61.4286,24,4)
+    Foreground = &H757577&
     Alignment = Align.TopRight
   }
   { lbl_fstype TextLabel
     MoveScaled(113,48,24,4)
+    Foreground = &H757577&
     Alignment = Align.TopRight
   }
   { lbl_owners TextLabel
     MoveScaled(113,52.5714,24,4)
-    Text = ("0xc8")
+    Foreground = &H757577&
     Alignment = Align.TopRight
   }
   { lbl_connection TextLabel
     MoveScaled(113,57.1429,24,4)
+    Foreground = &H757577&
     Text = ("USB")
     Alignment = Align.TopRight
   }
   { lbl_path TextLabel
     MoveScaled(113,61.4286,24,4)
+    Foreground = &H757577&
     Alignment = Align.TopRight
   }
-  { btn_about Button
-    MoveScaled(59,1,5,4)
-  }
   { TextLabel17 TextLabel
-    MoveScaled(76.8571,5,6,2)
+    MoveScaled(87,5,6,2)
     Font = Font["-2"]
     Foreground = &H808080&
     Text = ("Refresh")
     Alignment = Align.Center
   }
   { MenuButton1 MenuButton
-    MoveScaled(1,1.4286,6,3)
+    MoveScaled(0,1,6,4)
   }
   { TextLabel18 TextLabel
-    MoveScaled(2,4.7143,6,2)
+    MoveScaled(0,5,6,2)
     Font = Font["-2"]
-    Foreground = &HFFFFFF&
     Text = ("View")
-  }
-  { Button6 Button
-    MoveScaled(16,1.4286,4,3)
-    Text = ("+")
-  }
-  { Button7 Button
-    MoveScaled(19,1.4286,4,3)
-    Text = ("-")
+    Alignment = Align.Center
   }
   { TextLabel21 TextLabel
-    MoveScaled(17,4.7143,6,2)
+    MoveScaled(18,5,6,2)
     Font = Font["-2"]
-    Foreground = &HFFFFFF&
+    Foreground = &H808080&
     Text = ("Volume")
+    Alignment = Align.Center
   }
   { PictureBox10 PictureBox
-    MoveScaled(2,1.4286,4,3)
-    Picture = Picture.Load("sidebar-menu(1).png")
+    MoveScaled(1,2,3,3)
+    Picture = Picture.Load("view_button.png")
     Mode = PictureBox.Contain
-  }
-  { cboo Label
-    MoveScaled(6,11,24,4)
-    Font = Font["+3"]
   }
   { Frame2 Frame
     MoveScaled(33,46,54,21)
+    Foreground = &H757577&
   }
   { Frame1 Frame
     MoveScaled(86.5714,46,54,21)
+    Foreground = &H757577&
   }
   { Label10 Label
     MoveScaled(34,48.7143,51,4)
+    Foreground = &H757577&
     Text = ("____________________________________________________________________________________________________________________________")
   }
   { Label11 Label
     MoveScaled(34,53,51,4)
+    Foreground = &H757577&
     Text = ("____________________________________________________________________________________________________________________________")
   }
   { Label12 Label
     MoveScaled(34,58,51,4)
+    Foreground = &H757577&
     Text = ("____________________________________________________________________________________________________________________________")
   }
   { Label13 Label
     MoveScaled(88,49.7143,51,2)
+    Foreground = &H757577&
     Text = ("____________________________________________________________________________________________________________________________")
   }
   { Label14 Label
     MoveScaled(88,54,51,2)
+    Foreground = &H757577&
     Text = ("____________________________________________________________________________________________________________________________")
   }
   { Label15 Label
     MoveScaled(88,58,51,3)
+    Foreground = &H757577&
     Text = ("____________________________________________________________________________________________________________________________")
   }
-  { TextLabel15 TextLabel
-    MoveScaled(59,5,5,2)
+  { cboo Button
+    MoveScaled(2,12,27,4)
+    Border = False
+  }
+  { PictureBox2 PictureBox
+    MoveScaled(2,13,4,2)
+    Picture = Picture.Load("usb-2-512.png")
+    Mode = PictureBox.Contain
+  }
+  { btn_about2 Button
+    MoveScaled(21,1,6,4)
+  }
+  { btn_about3 Button
+    MoveScaled(15,1,6,4)
+  }
+  { pic_about3 PictureBox
+    MoveScaled(15,1,5,4)
+    Picture = Picture.Load("volume_plus.png")
+    Alignment = Align.Center
+    Mode = PictureBox.Contain
+  }
+  { pic_about2 PictureBox
+    MoveScaled(22,1,5,4)
+    Picture = Picture.Load("volume_minus.png")
+    Alignment = Align.Center
+    Mode = PictureBox.Contain
+  }
+  { btn_about4 Button
+    MoveScaled(64,1,6,4)
+  }
+  { pic_aid PictureBox
+    MoveScaled(64,1,5,4)
+    Picture = Picture.Load("aid.png")
+    Alignment = Align.Center
+    Mode = PictureBox.Contain
+  }
+  { btn_partition Button
+    MoveScaled(72,1,6,4)
+  }
+  { pic_partition PictureBox
+    MoveScaled(72,1,5,4)
+    Picture = Picture.Load("partition.png")
+    Alignment = Align.Center
+    Mode = PictureBox.Contain
+  }
+  { btn_refresh Button
+    MoveScaled(87,1,6,4)
+  }
+  { pic_refresh PictureBox
+    MoveScaled(87,1,5,4)
+    Picture = Picture.Load("restore.png")
+    Alignment = Align.Center
+    Mode = PictureBox.Contain
+  }
+  { lbl_aid TextLabel
+    MoveScaled(62,5,9,2)
     Font = Font["-2"]
     Foreground = &H808080&
-    Text = ("About")
+    Text = ("First Aid")
     Alignment = Align.Center
+  }
+  { lbl_partition TextLabel
+    MoveScaled(70,5,9,2)
+    Font = Font["-2"]
+    Foreground = &H808080&
+    Text = ("Partition")
+    Alignment = Align.Center
+  }
+  { btnBegin Button
+    MoveScaled(80,1,6,4)
   }
   { pic_erase PictureBox
-    MoveScaled(69,1.4286,4,3)
+    MoveScaled(81,2,5,3)
     Picture = Picture.Load("erase.png")
-    Alignment = Align.Center
-    Mode = PictureBox.Contain
-  }
-  { pic_about PictureBox
-    MoveScaled(60,1.4286,4,3)
-    Picture = Picture.Load("info-logo-png.png")
-    Alignment = Align.Center
-    Mode = PictureBox.Contain
-  }
-  { pic_erase3 PictureBox
-    MoveScaled(78,1.4286,4,3)
-    Picture = Picture.Load("refresh.png")
     Alignment = Align.Center
     Mode = PictureBox.Contain
   }

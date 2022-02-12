@@ -33,6 +33,7 @@ Dim sData As String
   
   Shell "lsblk" To sData
   sDrives = Split(sData, gb.NewLine)
+  Form_Open()
 End
 
 Public Function GetPartitions(sDrive As String) As String[]
@@ -132,7 +133,11 @@ Dim fstypedata As String
 End
 
 Public Sub btn_refresh_Click()
-  GetSDDrives()
+  RefreshSDDrives()
+End
+
+Public Sub pic_refresh_MouseDown()
+  RefreshSDDrives()
 End
 
 Public Sub PictureBox3_MouseDown()
